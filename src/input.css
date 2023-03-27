@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .cards {
+        @apply flex flex-col items-center gap-5
+    }
+    .main-button {
+        @apply bg-button rounded-full font-black text-2xxl text-white px-10 py-3 shadow-lg tracking-tighter
+    }
+    .featured-cards {
+        @apply rounded-xxl py-6 px-8 flex  gap-5 flex-col justify-between w-auto
+    }
+    .text-cards {
+        @apply text-white text-3xl font-black h-auto w-auto tracking-tighter
+    }
+}
