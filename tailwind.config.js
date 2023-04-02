@@ -3,6 +3,9 @@ module.exports = {
   content: ["./build/*.html"],
   theme: {
     extend: {
+      screens: {
+        'xs': '360px'
+      },
       backgroundImage: {
         'hero-image': "url('/img/hero-banner.webp')"
       },
@@ -60,7 +63,11 @@ module.exports = {
       },
       translate: {
         '1/4': '75%'
-      }
+      },
+      inset: {
+        '57': '14.5rem'
+      },
+      
     },
   },
   plugins: [],

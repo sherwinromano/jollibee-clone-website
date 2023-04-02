@@ -7,129 +7,142 @@
     <title>Jollibee: Food & Takeout Delivery in Philippines</title>
     <link rel="stylesheet" href="styles/output.css">
     <link rel="shortcut icon" href="../img/favicon.webp" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 <body class="font-nunito pt-25">
     <header class="bg-main border-b-4 border-b-yellow-400 h-25 w-full top-0 fixed z-50">
-        <section class="w-full h-full px-18 flex justify-between items-center flex-wrap">
-            <a href="#">
-                <img src="../img/jollibee-logo.webp" class="h-15" alt="Jollibee Logo">
+        <section class="w-full h-full xs:px-8 lg:px-18 flex justify-between items-center flex-wrap">
+            <a href="#" class="xs:w-2/4 md:w-auto h-full flex items-center">
+                <img src="../img/jollibee-logo.webp" class="xs:h-2/4 sm:h-2/4 md:h-15 lg:h-15" alt="Jollibee Logo">
             </a>
-            <ul class="flex items-center gap-3 text-white">
-                <li><a href="#" class="p-3 text-1xl font-black">Delivery</a></li>
-                <li><a href="#" class="p-3 text-1xl font-black">Locations</a></li>
-                <li><a href="#" class="p-3 text-1xl font-black">Menu <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></a></li>
-                <li><a href="#" class="p-3 text-1xl font-black">Promotions <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></a></li>
-                <a href="#">
-                    <button class="bg-button rounded-full text-1xl text-white px-8 py-3 shadow-lg tracking-tighter font-black">Order Now</button>
+            <div class="flex items-center sm:gap-3 md:gap-3 lg:gap-0 h-full">
+                <ul class="relative xs:hidden lg:flex items-center gap-2 text-white h-full">
+                    <li><a href="#" class="p-3 text-1xl font-black">Delivery</a></li>
+                    <li><a href="#" class="p-3 text-1xl font-black">Locations</a></li>
+                    <li><a href="#" class="relative p-3 text-1xl font-black hover:">Menu <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></a></li>
+                    <!-- Dropdown Menu -->
+                    <div class="hidden absolute top-full w-1/3 inset-x-57 bg-white ">
+                        <div class="border-t-yellow-400 p-5 border-t-4">
+                            <ul class="text-black font-extralight">
+                                <li class="mb-1"><a href="#">View Menu</a></li>
+                                <li><a href="#">Multi Delivery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <li><a href="#" class="p-3 text-1xl font-black">Promotions <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 inline-block"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></a></li>
+                </ul>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lg:hidden w-10 h-10 text-white cursor-pointer"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <a href="#" class="xs:hidden sm:block">
+                    <button class="bg-button rounded-full md:text-base lg:text-1xl text-white sm:px-5 md:px-5 lg:px-8 py-3 shadow-lg tracking-tighter font-black">Order Now</button>
                 </a>
-            </ul>
+            </div>
         </section>
     </header>
-    <div class="hero-section bg-hero-image bg-cover bg-top bg-no-repeat h-100 py-12 px-8 flex gap-3">
+    <div class="bg-hero-image bg-cover bg-top bg-no-repeat h-100 md:py-8 lg:py-12 px-8 flex gap-3">
         <div class="flex h-full w-full">
-            <div class="self-center text-center text-white w-full flex flex-col flex-wrap items-center gap-6 translate-x-8 -translate-y-1">
-                <h1 class="text-9xl font-black">Bringing joy to you</h1>
-                <p class="text-3xl font-bold w-98 pb-4">Have your Jollibee favorites delivered right to your doorstep!</p>
-                <a href="#" class="text-3xl bg-button rounded-full font-bold px-8 py-4 shadow-lg tracking-tighter">
+            <div class="self-center text-center text-white w-full flex flex-col flex-wrap items-center gap-6  xs:translate-x-0 xs:-translate-y-0 translate-x-8 -translate-y-1">
+                <h1 class="xs:text-5xl md:text-9xl font-black">Bringing joy to you</h1>
+                <p class="xs:w-auto xs:text-2xl md:text-3xl font-bold sm:w-98 xs:pb-0 sm:pb-4">Have your Jollibee favorites delivered right to your doorstep!</p>
+                <a href="#" class="md:text-3xl bg-button rounded-full font-bold xs:px-5 xs:py-3 md:px-8 md:py-4 shadow-lg tracking-tighter">
                     <button class="tracking-tighter">Order Now</button>
                 </a>
             </div>
         </div>
-        <div class="h-full w-full"></div>
+        <div class="xs:hidden md:block h-full w-full"></div>
     </div>
-    <div class="contact-section h-auto w-full pt-10 pb-12 px-28">
-        <section class="flex justify-evenly h-full">
+    <div class="h-auto w-full xs:p-8 md:py-12 lg:pt-10 lg:pb-12 md:px-8 lg:px-28">
+        <section class="xs:flex-col xs:gap-5 sm:gap-0 sm:flex-row flex justify-evenly h-full">
             <div class="cards">
                 <img src="../img/order-one.webp" alt="Order & Pick Up">
-                <p class="text-3xl font-extrabold text-default tracking-tighter">Order & Pick Up</p>
+                <p class="xs:text-1xl md:text-3xl font-extrabold text-default tracking-tighter">Order & Pick Up</p>
             </div>
             <div class="cards">
                 <img src="../img/order-two.webp" alt="Download the App">
-                <p class="text-3xl font-extrabold text-default tracking-tighter">Download the App</p>
+                <p class="xs:text-1xl md:text-3xl font-extrabold text-default tracking-tighter">Download the App</p>
             </div>
             <div class="cards">
                 <img src="../img/order-three.webp" alt="#87000">
-                <p class="text-3xl font-extrabold text-default tracking-tighter">#87000</p>
+                <p class="xs:text-1xl md:text-3xl font-extrabold text-default tracking-tighter">#87000</p>
             </div>
         </section>
         <section class="border-b-2px pt-16"></section>
     </div>
-    <div class="promo-section h-auto w-full px-28 pb-10 pt-0">
+    <div class="h-auto w-full sm:px-8 md:px-8 lg:px-28 pb-10 pt-0">
         <section class="flex flex-col items-center w-full gap-8">
-            <h2 class="text-4xl text-default font-black p-3 w-full text-center tracking-tighter">Exclusive Promos</h2>
-            <div class="promos flex w-full h-full gap-16 px-8">
-                <a href="#" class="w-full h-full">    
+            <h2 class="xs:text-3xl md:text-4xl text-default font-black sm:py-0 md:p-3 w-full text-center tracking-tighter">Exclusive Promos</h2>
+            <div class="promos xs:flex xs:flex-col xs:gap-8 xs:items-center md:grid md:grid-cols-2 lg:flex lg:flex-row w-full h-full md:gap-10 gap-16 md:px-0 px-8">
+                <a href="#" class="xs:w-3/4 sm:w-1/2 md:w-full h-full">    
                     <img src="../img/promo.jpg" class="rounded-xxl" alt="Promo One">
                 </a>
-                <a href="#" class="w-full h-full">
+                <a href="#" class="xs:w-3/4 sm:w-1/2 md:w-full h-full">
                     <img src="../img/promo-one.jpg" class="rounded-xxl" alt="Promo Two">
                 </a>
-                <a href="#" class="w-full h-full">
+                <a href="#" class="xs:w-3/4 sm:w-1/2 md:w-full h-full">
                     <img src="../img/promo-two.jpg" class="rounded-xxl" alt="Promo Three">
                 </a>
-               
             </div>
             <a href="#">
-                <button class="main-button">See All Promos</button>
+                <button class="xs:px-5 xs:text-1xl md:text-2xxl md:px-10 main-button">See All Promos</button>
             </a>
         </section>
     </div>
-    <div class="featured-section bg-featuredcolor py-10 px-20  h-auto">
+    <div class="bg-featuredcolor py-10 xs:px-8 sm:px-10 md:px-10 lg:px-20 h-auto">
         <section class="flex flex-col gap-10 items-center w-full">
-            <h2 class="text-default font-black text-4xl tracking-tighter">Featured Menu Items</h2>
-            <div class="flex justify-between w-full gap-12">
-                <a href="#" class="bg-main featured-cards w-full">
-                    <p class="text-cards">Chickenjoy Bucket<br><span class="text-2xl">Philippines’ best-tasting crispylicious, juicylicious.</span></p>
+            <h2 class="text-default font-black xs:text-3xl md:text-4xl tracking-tighter">Featured Menu Items</h2>
+            <div class="xs:flex xs:items-center xs:flex-col xs:gap-5 md:grid md:items-stretch md:grid-cols-2 md:gap-5 lg:flex-row lg:flex lg:gap-10">
+                <a href="#" class="bg-main featured-cards xs:w-full sm:w-3/4 md:w-full">
+                    <p class="text-cards xs:text-base lg:text-3xl">Chickenjoy Bucket<br><span class="text-2xl xs:leading-3 lg:leading-none">Philippines’ best-tasting crispylicious, juicylicious.</span></p>
                     <img src="../img/menu-one.webp" alt="Chicken Joy" class="self-center">
                 </a>
-                <a href="#" class="bg-spaghetti featured-cards w-full">
-                    <p class="text-cards">Spaghetti Pan<br><span class="text-2xl">The meatiest, cheesiest, and sweet-sarap Jolly Spaghetti!</span></p>
+                <a href="#" class="bg-spaghetti featured-cards xs:w-full sm:w-3/4 md:w-full">
+                    <p class="text-cards xs:text-base lg:text-3xl">Spaghetti Pan<br><span class="text-2xl xs:leading-3 lg:leading-none">The meatiest, cheesiest, and sweet-sarap Jolly Spaghetti!</span></p>
                     <img src="../img/menu-two.webp" alt="Spaghetti Pan" class="h-40 self-center">
                 </a>
-                <a href="#" class="bg-yumburger featured-cards w-full">
-                    <p class="text-cards">Yumburger<br><span class="text-2xl">Your favorite 100% Beefy Langhap-Sarap Burgers.</span> </p>
+                <a href="#" class="bg-yumburger featured-cards xs:w-full sm:w-3/4 md:w-full">
+                    <p class="text-cards xs:text-base lg:text-3xl">Yumburger<br><span class="text-2xl xs:leading-3 lg:leading-none">Your favorite 100% Beefy Langhap-Sarap Burgers.</span> </p>
                     <img src="../img/menu-three.webp" alt="Yumburger Combo" class="h-52 self-center translate-y-6">
                 </a>
             </div>
             <a href="#">
-                <button class="main-button">View Menu</button>
+                <button class="main-button xs:px-5 xs:text-1xl md:px-10 md:text-2xxl">View Menu</button>
             </a>
         </section>
     </div>
-    <div class="mission-section pt-20 pb-12 px-40 h-auto border-b-2 border-spaghetti">
-        <section class="flex">
-            <div class="section-one flex flex-col items-center p-3 h-full w-full">
+    <div class="xs:px-8 xs:py-12 md:py-12 lg:pt-20 lg:pb-12 md:px-8 lg:px-40 h-auto border-b-2 border-spaghetti">
+        <section class="xs:flex-col xs:gap-5 md:gap-0 md:flex-row flex w-full">
+            <div class="section-one flex flex-col items-center md:p-0 lg:p-3 h-full w-full">
                 <div class="image">
                     <img src="../img/cashier.webp" alt="Cashier picture">
                 </div>
                 <div class="text-center w-full flex flex-col">
-                    <h3 class="text-3xl tracking-tighter font-black text-default after:content-[''] after:bg-spaghetti after:block after:h-1 after:w-1/5 after:translate-x-1/4 after:my-5 pt-5">What We Do</h3>
-                    <p class="w-96 text-default text-18px self-center">Jollibee's Mission is to serve great-tasting food, bringing the joy of eating to everyone.</p>
+                    <h3 class="xs:text-2xl sm:text-3xl tracking-tighter font-black text-default after:content-[''] after:bg-spaghetti after:block after:h-1 after:w-1/5 after:translate-x-1/4 after:my-5 pt-5">What We Do</h3>
+                    <p class="xs:w-auto sm:w-3/6 md:w-96 text-default xs:text-15px sm:text-18px self-center">Jollibee's Mission is to serve great-tasting food, bringing the joy of eating to everyone.</p>
                 </div>
             </div>
-            <div class="section-two flex flex-col items-center  p-3 h-full w-full ">
+            <div class="section-two flex flex-col items-center md:p-0 lg:p-3 h-full w-full ">
                 <div class="image">
                     <img src="../img/customer.webp" alt="Customer picture">
                 </div>
                 <div class="text-center w-full flex flex-col">
-                    <h3 class="text-3xl tracking-tighter w-full font-black text-default after:content-[''] after:bg-main after:block after:h-1 after:w-2/2 after:translate-x-1/3 after:my-5 pt-5">What We Stand For</h3>
-                    <p class="w-85 text-default text-18px self-center">Jollibee is a family-centric brand that promotes family values and togetherness and espouses Filipino pride.</p>
+                    <h3 class="xs:text-2xl sm:text-3xl tracking-tighter w-full font-black text-default after:content-[''] after:bg-main after:block after:h-1 after:w-2/2 after:translate-x-1/3 after:my-5 pt-5">What We Stand For</h3>
+                    <p class="xs:w-auto sm:w-3/6 md:w-85 text-default xs:text-15px sm:text-18px self-center">Jollibee is a family-centric brand that promotes family values and togetherness and espouses Filipino pride.</p>
                 </div>
             </div>
         </section>
     </div>
-    <div class="footer-section px-18 h-auto">
+    <div class="xs:px-8 lg:px-18 h-auto">
         <section class="h-auto">
-            <div class="flex justify-between items-center h-auto py-8">
-                <div>
+            <div class="xs:flex-col sm:flex-row flex justify-between items-center h-auto py-8">
+                <div class="xs:self-start">
                     <img src="../img/jollibee-logo-footer.webp" alt="" class="pb-8" height="250px" width="280px">
                 </div>
-                <div class="self-end">
-                    <a href="#"><button class="main-button text-18px py-3 px-10">Order Now</button></a>
+                <div class="xs:self-start sm:self-end">
+                    <a href="#"><button class="main-button xs:text-1xl xs:px-5 md:text-18px py-3 md:px-10">Order Now</button></a>
                 </div>
             </div>
-            <div class="navbar flex justify-between h-auto pb-8">
-                <div class="flex flex-col gap-5">
+            <div class="navbar xs:grid xs:grid-cols-1 xs:gap-y-5 sm:grid-cols-2 sm:gap-y-5 md:grid-cols-3 md:gap-y-3 lg:flex justify-between h-auto pb-8">
+                <div class="flex flex-col xs:gap-0 sm:gap-5">
                     <p class="font-extrabold tracking-tighter text-16px">Follow Us</p>
                     <ul class="flex gap-2">
                         <li><a href="#" class="text-2xl"><img src="../img/facebook.webp" alt="Facebook Logo" height="48px" width="48px"></a></li>
@@ -177,14 +190,14 @@
                     </ul>
                 </div>
                 <div>
-                    <div class="flex flex-col items-end">
+                    <div class="flex flex-col md:items-start lg:items-end">
                         <img src="../img/Google-Play-Badge.webp" alt="Google-Play-Badge" width="160px">
                         <img src="../img/Apple-Store-Badge.webp" alt="Apple-Store-Badge" width="160px">
                     </div>
                 </div>
             </div>
             <div class="py-5">
-                <p class="font-extralight text-14px tracking-tighter text-copyright">
+                <p class="xs:text-center sm:text-left font-extralight text-14px tracking-tighter text-copyright">
                     &copy; 2022 Jollibee Foods Corporation. All rights reserved.
                 </p>
             </div>
